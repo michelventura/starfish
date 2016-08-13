@@ -1,0 +1,78 @@
+/** Portfolio Meta Box **/
+#themedy_portfolio_meta_box {
+	display: none;
+	visibility: hidden;
+}
+
+.themedy-portfolio #themedy_portfolio_meta_box {
+	display: block;
+	visibility: visible;
+}
+
+/** A dividing horizontal rule **/
+hr.div {
+	background: #CCC;
+	height: 1px;
+	border: none;
+	margin: 10px 0;
+}
+
+/** Themedy metabox Styles **/
+
+.themedy-metaboxes .top-buttons, .themedy-metaboxes .bottom-buttons {
+   padding-left: 8px;
+}
+
+.themedy-metaboxes .metabox-holder {
+	overflow: hidden;
+	clear: both;
+}
+
+.themedy-metaboxes .inside {
+	margin-top: 0;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.no-js .hide-if-no-js {
+	display: none;
+}
+
+.widget-control-actions {
+	clear: both;
+}
+
+.themedy-metaboxes .postbox textarea, #dashboard-widgets-wrap.themedy-metaboxes #dashboard-widgets.columns-1 #postbox-container-1 {
+	width: 100%;
+}
+
+.themedy-metaboxes .custom_media_upload {
+	margin: 5px 5px 5px 0;
+}
+
+#dashboard-widgets-wrap.themedy-metaboxes #dashboard-widgets.columns-2 #postbox-container-1 {
+	width: 49.5%;
+}
+
+/** Themedy custom admin icons **/
+#adminmenu #menu-posts-portfolio div.wp-menu-image:before {
+	content: "\f322";
+}
+
+#adminmenu #menu-posts-slide div.wp-menu-image:before {
+	content: "\f181";
+}
+
+#adminmenu #menu-posts-products div.wp-menu-image:before {
+	content: "\f312";
+}
+
+#adminmenu #menu-posts-photo div.wp-menu-image:before {
+	content: "\f233";
+}
+
+@media only screen and (max-width: 800px) {
+	#dashboard-widgets-wrap.themedy-metaboxes #dashboard-widgets #postbox-container-1, #dashboard-widgets-wrap.themedy-metaboxes #dashboard-widgets #postbox-container-2 {
+		width: 100%;
+	}
+}
