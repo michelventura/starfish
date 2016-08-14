@@ -92,13 +92,14 @@ function themedy_menu_area() {
 			}
 			echo '<div class="menu-items">';
 			$terms = get_terms( 'themedy_menu_cat');
+			$terms = wp_list_filter($terms, array('slug'=>'cortes'),'NOT');
 			$i = 1;
 			foreach ($terms as $term) {
 				echo '<div class="menu-section '.(($i==1) ? " first" : " last").'">';
 				echo '<h4>'.$term->name.'</h4>';
 
 				$menu_items = get_posts( array(
-					'posts_per_page'   => -1,
+					'posts_per_page'   => 4,
 					'post_type' => 'themedy_menu_item',
 					'tax_query' => array(
 						array(
