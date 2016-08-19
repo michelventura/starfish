@@ -60,7 +60,7 @@ function themedy_featured_area() {
 		}
 		echo '</div>';
 		if (!empty(themedy_get_option('features_area_link_text'))) {
-			echo '<div class="scroller animate fadeInUp" data-wow-delay=".5s"><a class="continue" href="'.apply_filters('themedy_features_link', '#find-out-more').'">'.esc_html(themedy_get_option('features_area_link_text')).'</a></div>';
+			echo '<div class="scroller animate fadeInUp" data-wow-delay=".5s"><a class="continue" href="'.apply_filters('themedy_features_link', '#conoce-starfish').'">'.esc_html(themedy_get_option('features_area_link_text')).'</a></div>';
 		}
 	}
 }
@@ -69,7 +69,7 @@ function themedy_featured_area() {
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 add_action('genesis_before_footer', 'themedy_content_area', 1);
 function themedy_content_area() {
-	echo '<div id="find-out-more"></div>';
+	echo '<div id="conoce-starfish"></div>';
 	if (themedy_get_option('fp_menu') != '') {
 		echo '<section class="t-content section"><div class="wrap">';
 		echo '<div class="text">';
